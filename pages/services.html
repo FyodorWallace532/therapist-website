@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | 3M Therapy</title>
+  <meta name="description" content="Individual therapy for men, marriage counseling, and meaning/purpose work. Serving St. Petersburg, FL and online throughout Florida and Illinois.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">3<span>M</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html" class="btn btn-outline">Get in Touch</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="../images/mountains-desert.jpg" alt="Mountain landscape" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <h4>Services</h4>
+    <h1>How I Can Help</h1>
+  </section>
+
+  <!-- INDIVIDUAL THERAPY SPLIT -->
+  <section class="split-section">
+    <div class="split-image">
+      <img src="../images/dock-sunset.jpg" alt="Dock at sunset">
+    </div>
+    <div class="split-text">
+      <h4>Individual Therapy</h4>
+      <h2>Therapy for Men</h2>
+      <p>Feeling stuck, overwhelmed, or disconnected from yourself? You're not alone — and you don't have to white-knuckle your way through it. Individual therapy gives you a private, judgment-free space to explore the thoughts, feelings, and patterns that have been running your life on autopilot.</p>
+      <p>Together, we'll work on understanding what's really driving your frustration, your anxiety, or that nagging emptiness — and build a path toward something better.</p>
+      <a href="individual-therapy.html" class="btn btn-outline-dark">Learn More</a>
+    </div>
+  </section>
+
+  <!-- COUPLES THERAPY SPLIT -->
+  <section class="split-section reverse">
+    <div class="split-image">
+      <img src="../images/mountain-lake.jpg" alt="Mountain lake reflection">
+    </div>
+    <div class="split-text">
+      <h4>Couples Therapy</h4>
+      <h2>Marriage &amp; Relationship Work</h2>
+      <p>Every couple hits rough patches. But when the disconnection becomes the norm — when conversations turn into arguments, silence replaces intimacy, and you feel more like roommates than partners — it's time to get help.</p>
+      <p>I help couples (and men navigating relationship challenges) learn to communicate honestly, rebuild trust, and reconnect on a level that actually matters.</p>
+      <a href="couples-therapy.html" class="btn btn-outline-dark">Learn More</a>
+    </div>
+  </section>
+
+  <!-- MEANING WORK SPLIT -->
+  <section class="split-section">
+    <div class="split-image">
+      <img src="../images/coastal-sunset.jpg" alt="Coastal sunset">
+    </div>
+    <div class="split-text">
+      <h4>Purpose &amp; Meaning</h4>
+      <h2>Men's Purpose &amp; Meaning Work</h2>
+      <p>You've checked the boxes — career, house, family — but something still feels hollow. The question "Is this all there is?" keeps surfacing, and no amount of hustle or distraction makes it go away.</p>
+      <p>This work is about reconnecting with what actually matters to you — not what you were told should matter. We'll explore your values, your identity beyond your roles, and what a meaningful life looks like on your terms.</p>
+      <a href="mens-groups.html" class="btn btn-outline-dark">Learn More</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Not sure which service is right for you?</h2>
+      <p>That's completely fine. Book a free 15-minute consultation and we'll figure it out together.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">3<span>M</span></a>
+          <p>Men. Marriage. Meaning.<br>Therapy for men navigating life's toughest challenges with courage and honesty.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><a href="mailto:connect@3mtherapy.com">connect@3mtherapy.com</a></p>
+          <p><a href="tel:+17277885301">(727) 788-5301</a></p>
+          <p style="margin-top: 12px;">1615 Pasadena Ave S. Suite 330<br>South Pasadena, FL 33707</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 3M Therapy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      document.getElementById('navbar').classList.add('scrolled');
+    });
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

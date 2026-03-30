@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Individual Therapy for Men | 3M Therapy</title>
+  <meta name="description" content="Individual therapy designed specifically for men dealing with anxiety, depression, identity, and life transitions. St. Petersburg, FL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">3<span>M</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html" class="btn btn-outline">Get in Touch</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <img src="../images/dock-sunset.jpg" alt="Dock extending over water" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <h4>Individual Therapy</h4>
+    <h1>Therapy for Men</h1>
+  </section>
+
+  <!-- SERVICE DETAIL -->
+  <section class="service-detail">
+    <div class="container">
+      <h2>You don't have to keep carrying this alone.</h2>
+      <p>Most men who come to therapy have been dealing with their struggles for a long time before they pick up the phone. Maybe you've been told — by family, by friends, by the culture around you — that men handle things on their own. That asking for help is weakness.</p>
+      <p>Here's the truth: the strongest thing you can do is face what's really going on. And that's exactly what individual therapy is about.</p>
+
+      <h3 style="margin-top: 40px; margin-bottom: 16px;">Common issues men bring to therapy:</h3>
+      <ul>
+        <li>Anxiety that won't quiet down — constant worry, restlessness, difficulty being present</li>
+        <li>Depression or a persistent sense of emptiness, numbness, or "going through the motions"</li>
+        <li>Anger that feels out of proportion — snapping at your partner, kids, or coworkers</li>
+        <li>Feeling lost after a major life change — divorce, job loss, becoming a father, midlife transition</li>
+        <li>Difficulty opening up or connecting emotionally with the people who matter most</li>
+        <li>Struggling with identity — who am I beyond my job title, my role as provider, my achievements?</li>
+        <li>Relationship patterns that keep repeating no matter who you're with</li>
+      </ul>
+
+      <h3 style="margin-top: 40px; margin-bottom: 16px;">What to expect</h3>
+      <p>Sessions are 50 minutes, typically weekly. In our work together, we'll move beyond surface-level coping strategies and get to the root of what's driving your pain. I use a relational, attachment-informed approach — which means we'll look at how your earliest relationships shaped the way you connect (or don't connect) with others today.</p>
+      <p>This isn't about lying on a couch and recounting your childhood. It's active, honest, sometimes uncomfortable work — and it leads to real, lasting change.</p>
+
+      <a href="contact.html" class="btn btn-primary">Schedule a Free Consult</a>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote-banner">
+    <img src="../images/dark-leaves.jpg" alt="Dark leaves" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <blockquote>"Until you make the unconscious conscious, it will direct your life and you will call it fate."</blockquote>
+      <cite>— Carl Jung</cite>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to start?</h2>
+      <p>The hardest part is making the call. Everything after that gets easier. Schedule your free 15-minute phone consultation today.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">3<span>M</span></a>
+          <p>Men. Marriage. Meaning.<br>Therapy for men navigating life's toughest challenges with courage and honesty.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><a href="mailto:connect@3mtherapy.com">connect@3mtherapy.com</a></p>
+          <p><a href="tel:+17277885301">(727) 788-5301</a></p>
+          <p style="margin-top: 12px;">1615 Pasadena Ave S. Suite 330<br>South Pasadena, FL 33707</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 3M Therapy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      document.getElementById('navbar').classList.add('scrolled');
+    });
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

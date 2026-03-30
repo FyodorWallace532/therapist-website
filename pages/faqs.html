@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs | 3M Therapy</title>
+  <meta name="description" content="Frequently asked questions about therapy for men, session logistics, insurance, and what to expect at 3M Therapy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">3<span>M</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="faqs.html" class="active">FAQs</a></li>
+        <li><a href="contact.html" class="btn btn-outline">Get in Touch</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <img src="../images/dark-leaves.jpg" alt="Dark foliage" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <h4>FAQs</h4>
+    <h1>Common Questions</h1>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">I've never been to therapy before. What should I expect?</div>
+        <div class="faq-answer">
+          <p>First, take a breath — you've already done the hardest part by looking into it. The first session is really about getting to know each other. I'll ask about what brought you in, what you're hoping to get out of therapy, and a bit about your background. You don't have to have everything figured out. Just show up honestly, and we'll take it from there.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is therapy really for men? I feel like it's more of a "women thing."</div>
+        <div class="faq-answer">
+          <p>I hear this a lot, and I get where it comes from. Men have been told for generations that they should be able to handle everything on their own. But the research is clear: therapy works for men just as effectively as it does for anyone else. The difference is that many men need a therapeutic approach that's direct, practical, and respects how they communicate. That's exactly what I offer.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How long does therapy take?</div>
+        <div class="faq-answer">
+          <p>It depends on what you're working on. Some men come in for a specific issue and find resolution in 8-12 sessions. Others are doing deeper work around identity, relationships, or long-standing patterns and may continue for six months to a year or more. We'll regularly check in on your progress and goals so therapy never feels aimless.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do you accept insurance?</div>
+        <div class="faq-answer">
+          <p>I am an out-of-network provider, which means I don't bill insurance directly. However, I can provide you with a superbill (a detailed receipt) that you can submit to your insurance company for potential reimbursement. Many PPO plans cover a significant portion of out-of-network therapy. I recommend calling your insurance provider to check your out-of-network mental health benefits.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What are your rates?</div>
+        <div class="faq-answer">
+          <p>Individual therapy sessions (50 minutes) are $175. Couples therapy sessions (50-80 minutes) range from $175-$225 depending on session length. I offer a limited number of sliding scale spots for those who need financial flexibility. We can discuss this during your free consultation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do you offer online therapy?</div>
+        <div class="faq-answer">
+          <p>Yes. I offer secure, HIPAA-compliant video sessions for anyone located in the state of Florida or Illinois. Many of my clients prefer the convenience of online therapy, and research shows it's just as effective as in-person sessions for most concerns. I also see clients in person at my office in South Pasadena, FL.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My wife wants us to go to couples therapy, but I'm not sure. Can I come alone first?</div>
+        <div class="faq-answer">
+          <p>Absolutely. In fact, many men start with individual sessions to explore their own feelings about the relationship before bringing their partner in. Sometimes the most powerful thing you can do for your marriage is to start working on yourself first. We can always transition to couples work when (and if) you're both ready.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What's the free consultation about?</div>
+        <div class="faq-answer">
+          <p>It's a brief, 15-minute phone call where we talk about what you're going through, I answer any questions you have, and we both get a sense of whether we'd be a good fit. There's zero pressure and zero obligation. Think of it as a conversation, not a commitment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Still have questions?</h2>
+      <p>I'm happy to answer them. Reach out and let's talk.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">3<span>M</span></a>
+          <p>Men. Marriage. Meaning.<br>Therapy for men navigating life's toughest challenges with courage and honesty.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><a href="mailto:connect@3mtherapy.com">connect@3mtherapy.com</a></p>
+          <p><a href="tel:+17277885301">(727) 788-5301</a></p>
+          <p style="margin-top: 12px;">1615 Pasadena Ave S. Suite 330<br>South Pasadena, FL 33707</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 3M Therapy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.add('scrolled'); });
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
+    function toggleFaq(el) { el.parentElement.classList.toggle('open'); }
+  </script>
+</body>
+</html>

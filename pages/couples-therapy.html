@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marriage &amp; Couples Therapy | 3M Therapy</title>
+  <meta name="description" content="Couples therapy and marriage counseling for men and their partners. Rebuild connection, trust, and communication. St. Petersburg, FL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">3<span>M</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html" class="btn btn-outline">Get in Touch</a></li>
+      </ul>
+      <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <img src="../images/mountain-lake.jpg" alt="Mountain lake" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <h4>Couples Therapy</h4>
+    <h1>Marriage &amp; Relationship Work</h1>
+  </section>
+
+  <section class="service-detail">
+    <div class="container">
+      <h2>Your marriage doesn't have to feel this hard.</h2>
+      <p>You used to be a team. Somewhere along the way, you stopped talking — really talking — and started either fighting about everything or avoiding each other entirely. The distance between you and your partner has grown, and you're not sure how to close it.</p>
+      <p>Maybe you're here because your partner gave you an ultimatum. Maybe you're here because you can feel the relationship slipping away and you're not ready to give up. Either way, showing up is the first step — and it matters.</p>
+
+      <h3 style="margin-top: 40px; margin-bottom: 16px;">Signs your relationship could benefit from therapy:</h3>
+      <ul>
+        <li>The same arguments keep repeating with no resolution</li>
+        <li>You feel more like roommates than romantic partners</li>
+        <li>Trust has been broken — through infidelity, dishonesty, or emotional withdrawal</li>
+        <li>You avoid difficult conversations because they always escalate</li>
+        <li>Intimacy (emotional or physical) has dried up</li>
+        <li>You're considering separation or divorce but aren't sure it's the right call</li>
+        <li>A major life change (new baby, job loss, health crisis) has put strain on the relationship</li>
+      </ul>
+
+      <h3 style="margin-top: 40px; margin-bottom: 16px;">How couples therapy works</h3>
+      <p>I use Emotionally Focused Therapy (EFT) and Gottman Method principles to help couples understand the negative cycles that keep them stuck. Most conflict in relationships isn't about the dishes or who forgot to call — it's about deeper needs for security, connection, and feeling valued.</p>
+      <p>In our sessions, we'll identify those deeper needs and help you communicate them to each other in ways that actually land. The goal isn't to eliminate conflict — it's to make your relationship a place where both of you feel safe, heard, and connected.</p>
+      <p>Sessions are 50-80 minutes and can be weekly or biweekly depending on your needs.</p>
+
+      <a href="contact.html" class="btn btn-primary">Schedule a Free Consult</a>
+    </div>
+  </section>
+
+  <section class="quote-banner">
+    <img src="../images/calm-water.jpg" alt="Calm water" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <blockquote>"The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed."</blockquote>
+      <cite>— Carl Jung</cite>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>It's not too late.</h2>
+      <p>Most couples wait an average of six years before seeking help. Don't wait until the damage is irreversible. Reach out today.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">3<span>M</span></a>
+          <p>Men. Marriage. Meaning.<br>Therapy for men navigating life's toughest challenges with courage and honesty.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigate</h4>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Get in Touch</h4>
+          <p><a href="mailto:connect@3mtherapy.com">connect@3mtherapy.com</a></p>
+          <p><a href="tel:+17277885301">(727) 788-5301</a></p>
+          <p style="margin-top: 12px;">1615 Pasadena Ave S. Suite 330<br>South Pasadena, FL 33707</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 3M Therapy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', function() { document.getElementById('navbar').classList.add('scrolled'); });
+    function toggleMenu() { document.getElementById('navLinks').classList.toggle('open'); }
+    document.querySelectorAll('.nav-links a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
+  </script>
+</body>
+</html>
