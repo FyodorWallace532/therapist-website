@@ -1,0 +1,89 @@
+====================================================
+  3M THERAPY — SQUARESPACE SETUP GUIDE
+  Men. Marriage. Meaning.
+====================================================
+
+This folder contains all the code you need to build
+your 3M Therapy website in Squarespace.
+
+There are 3 types of code files:
+
+----------------------------------------------
+1. HEADER-CODE-INJECTION.html
+----------------------------------------------
+WHERE TO PASTE:
+  Settings > Advanced > Code Injection > Header
+
+This loads the Google Fonts used across your site.
+Paste the entire contents of this file into the
+Header box.
+
+----------------------------------------------
+2. CUSTOM-CSS.css
+----------------------------------------------
+WHERE TO PASTE:
+  Design > Custom CSS
+
+This controls the look and feel of your entire site
+(colors, fonts, buttons, spacing, etc).
+Paste the entire contents of this file into the
+Custom CSS box.
+
+----------------------------------------------
+3. Page Code Blocks (one file per page)
+----------------------------------------------
+These go inside individual pages. For each page:
+
+  a) Create a new page in Squarespace
+  b) Add a "Code Block" (click + > Code)
+  c) Paste the contents of the matching file
+  d) Make sure "Display Source" is UNCHECKED
+
+Files:
+  - page-HOME.html          → Your homepage
+  - page-ABOUT.html         → About Me page
+  - page-SERVICES.html      → Services overview
+  - page-INDIVIDUAL.html    → Individual Therapy
+  - page-COUPLES.html       → Couples Therapy
+  - page-MEANING.html       → Purpose & Meaning Work
+  - page-FAQS.html          → FAQs page
+  - page-CONTACT.html       → Contact / Get in Touch
+
+----------------------------------------------
+SQUARESPACE SETTINGS TO CONFIGURE:
+----------------------------------------------
+- Site Title: 3M Therapy
+- Tagline: Men. Marriage. Meaning.
+- Logo Text: 3M
+- Fonts: Set heading font to "Playfair Display"
+         Set body font to "Inter" or "Helvetica"
+- Colors:
+    Background: #faf9f6 (warm off-white)
+    Heading text: #2c2c2c (near-black)
+    Body text: #5a5a5a (dark gray)
+    Accent/buttons: #3d5a4e (forest green)
+    Accent highlight: #c4a77d (warm gold)
+
+----------------------------------------------
+IMAGES
+----------------------------------------------
+Upload these images from the /images/ folder
+when building each page. The code blocks reference
+them — replace the placeholder src values with
+your Squarespace image URLs after uploading.
+
+----------------------------------------------
+NAVIGATION MENU
+----------------------------------------------
+Set up your nav in:
+  Pages > Main Navigation
+
+Add these pages in order:
+  1. Home
+  2. About
+  3. Services (with sub-pages below)
+     - Individual Therapy
+     - Couples Therapy
+     - Purpose & Meaning
+  4. FAQs
+  5. Get in Touch (set as button style)

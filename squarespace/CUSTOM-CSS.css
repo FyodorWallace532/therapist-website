@@ -1,0 +1,591 @@
+/* =============================================
+   3M THERAPY — CUSTOM CSS FOR SQUARESPACE
+   Paste this into: Design > Custom CSS
+   ============================================= */
+
+/* ----- Global Fonts ----- */
+h1, h2, h3, h4,
+.header-title,
+.site-title a {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+body,
+p,
+a,
+li,
+input,
+textarea,
+select,
+button,
+.header-nav-list a {
+  font-family: 'Inter', 'Segoe UI', Helvetica, sans-serif !important;
+}
+
+/* ----- Color Variables ----- */
+body {
+  --color-bg: #faf9f6;
+  --color-text: #2c2c2c;
+  --color-text-light: #5a5a5a;
+  --color-accent: #3d5a4e;
+  --color-accent-light: #4a7a64;
+  --color-warm: #c4a77d;
+  --color-warm-light: #e8dcc8;
+}
+
+/* ----- Site Background ----- */
+body,
+.page-section,
+.content-wrapper {
+  background-color: var(--color-bg) !important;
+}
+
+/* ----- Headings ----- */
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem) !important;
+  line-height: 1.3 !important;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem) !important;
+  line-height: 1.3 !important;
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.6rem) !important;
+  line-height: 1.3 !important;
+}
+
+/* ----- Subheadings / Labels ----- */
+.sqsp-label,
+.threem-label {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+}
+
+/* ----- Body Text ----- */
+p {
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important;
+  color: var(--color-text-light);
+}
+
+/* ----- Buttons: Primary ----- */
+.sqs-button-element--primary,
+.sqs-block-button-element--medium,
+.sqs-block-button-element--large {
+  background-color: var(--color-accent) !important;
+  color: #ffffff !important;
+  border: 2px solid var(--color-accent) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  padding: 14px 36px !important;
+  transition: all 0.3s ease !important;
+}
+
+.sqs-button-element--primary:hover,
+.sqs-block-button-element--medium:hover,
+.sqs-block-button-element--large:hover {
+  background-color: var(--color-accent-light) !important;
+  border-color: var(--color-accent-light) !important;
+}
+
+/* ----- Buttons: Secondary / Outline ----- */
+.sqs-button-element--secondary {
+  background-color: transparent !important;
+  color: var(--color-accent) !important;
+  border: 2px solid var(--color-accent) !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  padding: 14px 36px !important;
+  transition: all 0.3s ease !important;
+}
+
+.sqs-button-element--secondary:hover {
+  background-color: var(--color-accent) !important;
+  color: #ffffff !important;
+}
+
+/* ----- Navigation ----- */
+.header-nav-list a {
+  font-size: 0.88rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+/* ----- Navigation CTA Button ----- */
+.header-actions .btn,
+.header-nav-list a[href*="get-in-touch"],
+.header-nav-list a[href*="contact"] {
+  background-color: transparent !important;
+  border: 2px solid var(--color-accent) !important;
+  color: var(--color-accent) !important;
+  padding: 10px 24px !important;
+  font-size: 0.82rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  transition: all 0.3s ease !important;
+}
+
+.header-actions .btn:hover,
+.header-nav-list a[href*="get-in-touch"]:hover,
+.header-nav-list a[href*="contact"]:hover {
+  background-color: var(--color-accent) !important;
+  color: #ffffff !important;
+}
+
+/* ----- Logo / Site Title ----- */
+.header-title .site-title a {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* ----- Section Backgrounds ----- */
+.page-section.dark,
+.page-section[data-section-theme="dark"] {
+  background-color: #1a1a1a !important;
+}
+
+.page-section.white,
+.page-section[data-section-theme="white"] {
+  background-color: #ffffff !important;
+}
+
+/* ----- Image Overlay on Dark Sections ----- */
+.page-section.dark .section-background-overlay,
+.page-section[data-section-theme="dark"] .section-background-overlay {
+  background-color: rgba(0, 0, 0, 0.55) !important;
+  opacity: 1 !important;
+}
+
+/* ----- Quote / Blockquote Styling ----- */
+blockquote,
+.quote-block blockquote,
+.sqs-block-quote blockquote {
+  font-family: 'Playfair Display', serif !important;
+  font-style: italic !important;
+  font-size: clamp(1.4rem, 3vw, 2.2rem) !important;
+  line-height: 1.5 !important;
+  color: #ffffff;
+}
+
+.quote-block .source,
+.sqs-block-quote .source {
+  color: var(--color-warm) !important;
+  font-style: normal !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.08em !important;
+}
+
+/* ----- Pain Point / Feature Blocks ----- */
+.threem-pain-point {
+  padding: 24px;
+  border-left: 3px solid var(--color-warm);
+  margin-bottom: 24px;
+}
+
+.threem-pain-point p {
+  color: var(--color-text-light);
+  font-size: 1rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* ----- Service Cards ----- */
+.threem-service-card {
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none !important;
+  display: block;
+  color: inherit !important;
+}
+
+.threem-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.threem-service-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.threem-service-card:hover img {
+  transform: scale(1.05);
+}
+
+.threem-card-body {
+  padding: 32px;
+}
+
+.threem-card-body h3 {
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.threem-card-body p {
+  color: var(--color-text-light);
+  font-size: 0.98rem !important;
+  margin-bottom: 20px;
+}
+
+.threem-learn-more {
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  text-decoration: none !important;
+}
+
+.threem-learn-more::after {
+  content: ' \2192';
+  transition: margin-left 0.3s ease;
+  margin-left: 4px;
+}
+
+.threem-learn-more:hover::after {
+  margin-left: 10px;
+}
+
+/* ----- Service Cards Grid ----- */
+.threem-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ----- FAQ Accordion ----- */
+.threem-faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 24px 0;
+}
+
+.threem-faq-question {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  user-select: none;
+}
+
+.threem-faq-question::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.threem-faq-item.open .threem-faq-question::after {
+  content: '\2212';
+}
+
+.threem-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.threem-faq-item.open .threem-faq-answer {
+  max-height: 600px;
+  padding-top: 16px;
+}
+
+.threem-faq-answer p {
+  color: var(--color-text-light);
+  font-size: 0.98rem !important;
+}
+
+/* ----- Contact Form ----- */
+.threem-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.threem-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.threem-detail-item .label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  min-width: 80px;
+}
+
+.threem-detail-item .value {
+  color: var(--color-text-light);
+  font-size: 0.98rem;
+}
+
+.threem-detail-item .value a {
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
+.threem-detail-item .value a:hover {
+  color: var(--color-accent);
+}
+
+/* ----- Split Sections (Image + Text side by side) ----- */
+.threem-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 500px;
+  max-width: 100%;
+}
+
+.threem-split-image {
+  overflow: hidden;
+}
+
+.threem-split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.threem-split-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 64px;
+}
+
+.threem-split-text h4 {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.threem-split-text h2 {
+  margin-bottom: 24px;
+}
+
+.threem-split-text p {
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+}
+
+/* ----- Approach / 3-Column Items ----- */
+.threem-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.threem-approach-item {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.threem-approach-item .icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  color: var(--color-accent);
+}
+
+.threem-approach-item h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem !important;
+}
+
+.threem-approach-item p {
+  color: var(--color-text-light);
+  font-size: 0.95rem !important;
+}
+
+/* ----- About Image with Border Accent ----- */
+.threem-about-image {
+  position: relative;
+}
+
+.threem-about-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.threem-about-image::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--color-warm);
+  z-index: -1;
+}
+
+/* ----- Credentials List ----- */
+.threem-credentials {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.threem-credentials ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.threem-credentials li {
+  color: var(--color-text-light);
+  margin-bottom: 8px;
+  font-size: 0.98rem;
+}
+
+/* ----- Footer ----- */
+footer,
+.footer-section {
+  background-color: #1a1a1a !important;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.6) !important;
+  transition: color 0.3s ease !important;
+}
+
+footer a:hover {
+  color: var(--color-warm) !important;
+}
+
+/* ----- Warm Gold Accent Color Utility ----- */
+.threem-gold {
+  color: var(--color-warm) !important;
+}
+
+.threem-green {
+  color: var(--color-accent) !important;
+}
+
+/* ----- Section CTA Block ----- */
+.threem-cta {
+  text-align: center;
+  padding: 80px 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.threem-cta h2 {
+  margin-bottom: 16px;
+}
+
+.threem-cta p {
+  margin-bottom: 32px;
+  font-size: 1.1rem !important;
+}
+
+/* ----- Responsive ----- */
+@media (max-width: 768px) {
+  .threem-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .threem-split {
+    grid-template-columns: 1fr;
+  }
+
+  .threem-split-text {
+    padding: 48px 24px;
+  }
+
+  .threem-split-image {
+    height: 300px;
+  }
+
+  .threem-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .threem-approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .threem-about-image::after {
+    display: none;
+  }
+}
+
+/* ----- Form Styling ----- */
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper input[type="tel"],
+.form-wrapper textarea,
+.form-wrapper select,
+.threem-form input,
+.threem-form textarea,
+.threem-form select {
+  width: 100%;
+  padding: 12px 16px !important;
+  border: 1px solid #ddd !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 1rem !important;
+  color: var(--color-text) !important;
+  background-color: var(--color-bg) !important;
+  transition: border-color 0.3s ease !important;
+}
+
+.form-wrapper input:focus,
+.form-wrapper textarea:focus,
+.form-wrapper select:focus,
+.threem-form input:focus,
+.threem-form textarea:focus,
+.threem-form select:focus {
+  outline: none !important;
+  border-color: var(--color-accent) !important;
+}
+
+.threem-form label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+  color: var(--color-text);
+}
+
+.threem-form .form-group {
+  margin-bottom: 20px;
+}
